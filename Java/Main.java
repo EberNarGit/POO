@@ -6,7 +6,8 @@ class Main{
         Car car = new Car(1, "AMQ123", "Eber Alv", 5);
         car.printDataCar();
 
-        Car car2 = new Car(2, "ZCV526", "Pepe Lva", 8);
+        Car car2 = new Car(2, "ZCV526", "Pepe Lva", 4);
         car2.printDataCar();
+
     }
 }

@@ -14,4 +14,8 @@ class Account {
         this.email = email;
         this.password = password;
     }
+
+    void printDataAccount () {
+        System.out.println("name: " + name + ". document" + document + "email" + email);
+    }
 }
