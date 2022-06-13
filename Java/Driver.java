@@ -1,7 +1,7 @@
 package Java;
 
 class Driver extends Account{
-    public User(Integer id, String name, String document, String email, String password){
-        super(id, name, document, email, password);
+    public Driver(Integer id, String name, String document, String email, String password){
+        super(name, document);
     }
 }

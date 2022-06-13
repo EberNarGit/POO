@@ -1,13 +1,34 @@
 <?php
     require_once('car.php');
-    class UberBlack extends Car{
-        public $typeCarAccepted;
-        public $seatsMaterial;
+    class UberVan extends Car {
+        public $brand;
+        public $model;
+    
+        public function __construct($license, $driver, $brand, $model){
+            parent::__construct($license,$driver);
+            $this->license = $license;
+            $this->driver = $driver;
+            $this->brand = $brand;
+            $this->model = $model;
+        }
+    
+        public function PrintDataCar(){
+            parent::PrintDataCar();
+            echo" 
+            Modelo: $this->model
+            Marca: $this->brand 
+            
+            ";
+          }
 
-        public function __construct($license, $driver, $typeCarAccepted, $seatsMaterial) {
-            parent::__construct($license, $driver);
-            $this->typeCarAccepted = $typeCarAccepted;
-            $this->seatsMaterial = $seatsMaterial;
+        public function setPassenger($passenger) {   
+            if ($passenger == 6) {
+                $this->passenger = $passenger;
+            }
+            else {
+                echo "Necesitas asignar 6 pasajeros ";
+            }
+        
         }
     }
 ?>

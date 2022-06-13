@@ -1,11 +1,12 @@
 package Java;
-class UberPool extends Car{
+class UberPool extends Car {
     String brand;
     String model;
-    
-    public UberPool(Integer id, String license, String driver, Integer passenger, String brand, String model) {
-        super(id, license, driver, passenger);
+
+    public UberPool(String license, Account driver, String brand, String model){
+        super(license, driver);
         this.brand = brand;
         this.model = model;
-    } 
+
+    }
 }

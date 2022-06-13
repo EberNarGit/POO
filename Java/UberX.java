@@ -1,11 +1,19 @@
 package Java;
-class UberX extends Car{
+
+class UberX extends Car {
     String brand;
     String model;
-    
-    public UberX(Integer id, String license, String driver, Integer passenger, String brand, String model) {
-        super(id, license, driver, passenger);
+
+    public UberX(String license, Account driver, String brand, String model){
+        super(license, driver);
         this.brand = brand;
         this.model = model;
-    } 
+
+    }
+
+    @Override
+    void printDataCar() {
+        super.printDataCar();
+        System.out.println("Modelo: " + model + " Brand: " + brand);
+    }
 }
